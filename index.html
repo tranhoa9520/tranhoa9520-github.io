@@ -1,121 +1,89 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Glow Beauty - 실험용 화장품 스토어</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Arial', sans-serif;
-            background: #fafafa;
-        }
+  <meta charset="UTF-8">
+  <title>Dr.G 실험 페이지</title>
 
-        header {
-            background: #ffffff;
-            padding: 20px 40px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 1px solid #eee;
-            position: sticky;
-            top: 0;
-        }
+  <style>
+    body {
+      font-family: Arial;
+      background-color: #f4f7fb;
+      margin: 0;
+    }
 
-        header h1 {
-            margin: 0;
-            font-size: 24px;
-            color: #333;
-        }
+    header {
+      background-color: #2e7d32;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 22px;
+    }
 
-        nav a {
-            margin-left: 20px;
-            text-decoration: none;
-            color: #555;
-            font-weight: 500;
-        }
+    .container {
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
+    }
 
-        .hero {
-            background: url('https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
-            height: 380px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            text-shadow: 0 2px 8px rgba(0,0,0,0.4);
-        }
+    .product {
+      background: white;
+      padding: 20px;
+      width: 320px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      text-align: center;
+    }
 
-        .hero h2 {
-            font-size: 48px;
-            margin: 0;
-        }
+    .product img {
+      width: 100%;
+      border-radius: 10px;
+    }
 
-        .container {
-            padding: 40px;
-        }
+    .price {
+      color: #2e7d32;
+      font-size: 22px;
+      margin: 10px 0;
+    }
 
-        .product-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-            gap: 30px;
-        }
+    .btn {
+      background-color: #2e7d32;
+      border: none;
+      padding: 12px;
+      width: 100%;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 6px;
+    }
 
-        .product {
-            background: #fff;
-            border-radius: 12px;
-            padding: 20px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-            transition: 0.2s;
-        }
-
-        .product:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 6px 16px rgba(0,0,0,0.1);
-        }
-
-        .product img {
-            width: 100%;
-            border-radius: 10px;
-        }
-
-        .product h3 {
-            margin: 15px 0 5px;
-            font-size: 20px;
-        }
-
-        .price {
-            color: #e91e63;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-
-        button {
-            width: 100%;
-            padding: 12px;
-            background: #e91e63;
-            border: none;
-            color: white;
-            border-radius: 8px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-
-        button:hover {
-            background: #d21857;
-        }
-
-        footer {
-            text-align: center;
-            padding: 30px;
-            color: #777;
-            margin-top: 40px;
-        }
-    </style>
+    .btn:hover {
+      background-color: #1b5e20;
+    }
+  </style>
 </head>
+
 <body>
 
-<header>
-    <h1>Glow Beauty</h1>
-    <nav>
-        <a href="#">홈</a>
-        <a href="#">
+<header>🌿 Dr.G 공식 테스트 스토어</header>
+
+<div class="container">
+  <div class="product">
+    <img src="https://via.placeholder.com/300" alt="Dr.G 제품">
+
+    <h2>Dr.G 레드 블레미쉬 크림</h2>
+    <p>민감 피부를 진정시키고 수분을 공급하는 크림</p>
+
+    <div class="price">₩32,000</div>
+
+    <button class="btn" onclick="buy()">지금 구매</button>
+  </div>
+</div>
+
+<script>
+  function buy() {
+    alert("구매 버튼 클릭 (실험 데이터 기록 가능)");
+  }
+</script>
+
+</body>
+</html>
